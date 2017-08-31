@@ -1,0 +1,17 @@
+<!-- <form action=‘/landmarks/new’ method=‘GET’>
+ <input type=“submit” value=“make new landmark”>
+<form/>
+
+<form action=‘/landmarks/edit’ method=‘GET’>
+ <input type=“submit” value=“edit a landmark”>
+<form/>
+
+<form action=‘/landmarks/show’ method=‘GET’>
+ <input type=“submit” value=“see all landmarks”>
+<form/> -->
+
+
+<% @landmarks.each do |landmark| %>
+<h2><%= landmark.name %></h2>
+<h2><%= landmark.year_completed %></h2>
+<% end %>
